@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action = "read.php" method = "post">
+        <center>
+            <!--requiered: company; name; surname; address; title; number; date; func-->
+            <table>
+                <tr>
+                    <td style = "color:red;">*</td><td>Company:</td>
+                    <td><input type = "text" name = "company"></td>
+                </tr>
+                <tr>
+                    <td style = "color:red;">*</td><td>First Name:</td>
+                    <td><input type = "text" name = "name"></td>
+                </tr>
+                <tr>
+                    <td style = "color:red;">*</td><td>Last Name:</td>
+                    <td><input type = "text" name = "surname"></td>
+                </tr>
+                <tr>
+                    <td style = "color:red;">*</td><td>E-mail:</td>
+                    <td><input type = "text" name = "address"></td>
+                </tr>
+                <tr>
+                    <td style = "color:red;">*</td><td>Title:</td>
+                    <td><input type = "text" name = "title"></td>
+                </tr>
+                <tr>
+                    <td style = "color:red;">*</td><td>Phone:</td>
+                    <td><input type = "text" name = "number"></td>
+                </tr>
+                <tr>
+                    <td style = "color:red;"></td><td>Cancel Registration:</td>
+                    <td><input type = "checkbox" name = "box"></td>
+                </tr>
+                <tr>
+                    <td style = "color:red;">*</td><td>Date:</td>
+                    <td><input type = "date" name = "date"></td>
+                </tr>
+                <tr>
+                    <td style = "color:red;">*</td><td>Job Function:</td>
+                    <td>
+                        <input type = "radio" name = "func" value = "1">Dyrektor<br/>
+                        <input type = "radio" name = "func" value = "2">Kierownik<br/>
+                        <input type = "radio" name = "func" value = "3" checked="checked">Sprzątacz<br/>
+                        <input type = "radio" name = "func" value = "4">Sekretarz<br/>
+                        <input type = "radio" name = "func" value = "5">Pracownik
+                    </td>
+                </tr>
+                <tr>
+                    <td style = "color:red;"></td><td>Dietary Requirements:</td>
+                    <td><input type = "text" name = "req"></td>
+                </tr>
+                <tr>
+                    <td style = "color:red;"></td><td>Expectations:</td>
+                    <td>
+                        <textarea name="area" rows="4" cols="50"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <input type = "submit">
+        </center>
+    </form>
+</body>
+</html>
